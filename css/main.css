@@ -2191,8 +2191,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .brand-wrap {
       padding: 40px 0;
       margin-top: -52px; } }
-  .brand-wrap .owl-carousel .owl-item img {
-    width: auto !important; }
+  .brand-wrap .owl-carousel .owl-item img,
+  .brand-wrap .single-brand img {
+    width: auto !important;
+    max-height: 40px;
+    max-width: 100%; }
   .brand-wrap .single-brand {
     text-align: center;
     -webkit-filter: grayscale(100%);

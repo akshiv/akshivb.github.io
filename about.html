@@ -56,7 +56,6 @@
 								<li><a href="energy-details.html">Powering Our Future</a></li>
 								<li><a href="solar-details.html">Solar Vehicle Project</a></li>
 								<li><a href="shutter-details.html">Ultrafast Shutter</a></li>
-								<li><a href="other-projects.html">Other Projects</a></li>
 							</ul>
 						</li>
 						<li><a href="blog.html">Blog</a></li>
@@ -96,19 +95,21 @@
 				<div class="col-lg-5 col-md-12 about-right">
 					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
 						<p>
-							I am a software engineer, mechincally minded, and an environmental activist.
-							Originally from New Delhi, I grew up in Vancouver where I attend the University of British Columbia,
-							graduating with a Bachelors of Applied Science in Engineering Physics and a Minor in Honors Mathematics.
-							Recently, I worked for Advanced Development at Auris Health in the Tools and Infrastructure Team developing robotic Apis
-							Before that, I was in the Instruments team as a mechanical engineer, focusing on performance testing.
-							In my spare time you’ll find me out hiking, playing ultimate frisbee, or tinkering on some hardware project.
-							I enjoy learning new things. I'm an energy and public policy nerd,
-							so if you want to chat about urban infill, fast breeder reactors, or learn what either of those mean I’m your guy.
+							I'm a software engineer who spends a lot of time thinking about hardware.
+							Originally from New Delhi, I grew up in Vancouver, where I studied at the University of British Columbia,
+							graduating with a Bachelor of Applied Science in Engineering Physics and a Minor in Honors Mathematics.
+
+							Currently, I'm working in the Bay as a software engineer, mostly at hardware companies. </p>
+
+						<p>
+
+							In my spare time you'll find me out hiking / biking / running, cooking, trying exotic coffees, or tinkering on some small hardware project
+							I enjoy learning new things! I'm an energy and public policy nerd, so if you want to chat about urban infill, fast breeder reactors, or learn what either of those mean, I'm your guy.
 						</p>
-						<p>Below is my resume, I'm actively looking for employment. If you think you know of something that is a good fit, please reach out.
+						<p> Below is my resume if you want a structured look at what I've been up to. I'm not actively looking but feel free to reach out if you think you have something that might interest me.
 						</p>
 					</div>
-					<a target="_blank" href="WebResume.pdf" class="primary-btn" data-text="Resume">
+					<a target="_blank" href="resume.pdf" class="primary-btn" data-text="Resume">
 						<span>R</span>
 						<span>e</span>
 						<span>s</span>
@@ -128,7 +129,6 @@
 				<div class="col-lg-12">
 					<div class="section-title">
 						<h2>Job History</h2>
-						<!-- <p>These are the places, I've worked in the recent past</p> -->
 					</div>
 				</div>
 			</div>
@@ -138,11 +138,11 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Software Engineer</h4>
-								<p>J&J Robotics and Digital, Santa Clara CA</p>
+								<h4>Co-Founder</h4>
+								<p>Merlin, San Francisco CA</p>
 							</div>
 							<div class="top-right">
-								<a href="https://www.aurishealth.com/" target="_blank" class="primary-btn" data-text="Jan '20 to June '21">
+								<a href="https://www.get-merlin.com/" target="_blank" class="primary-btn" data-text="Oct '25 to Mar '26">
 									<span>C</span><span>o</span><span>m</span><span>p</span><span>a</span><span>n</span><span>y</span>
 									<span>L</span><span>i</span><span>n</span><span>k</span>
 								</a>
@@ -150,10 +150,9 @@
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.6s">
 							<ul style="list-style-type:disc">
-								<li>Created libraries to provide high level logging capabilities in Python that plugged into low level C++ applications</li>
-								<li>Wrote API for the rapid integration of new sensors to expand logging without needing additions to control chain</li>
-								<li>Created testing infrastructure to manage test cases and data generated. Worked on streamlined pipeline for data definition, packing, upload, and processing</li>
-								<li>Worked extensively with PyTest, Numpy, and Django libraries to build testing tools for use in automated manufacturing testing.</li>
+								<li>Worked across the stack to design a smart component selection engine for electrical components.</li>
+								<li>Built the backend in Python (FastAPI) and the frontend in NextJS, creating a visual way to compare capacitors &mdash; letting users compare key engineering graphs and find drop-in replacements for their parts.</li>
+								<li>Worked on SEO, analytics, user login/auth, and billing to build out the product.</li>
 							</ul>
 						</div>
 					</div>
@@ -163,48 +162,46 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Mechanical Engineer</h4>
-								<p>Auris Health, Redwood City CA</p>
+								<h4>Lead Software Engineer</h4>
+								<p>Humane, Inc. (acquired by HP), San Francisco CA</p>
 							</div>
 							<div class="top-right">
-								<a href="https://www.aurishealth.com/home" target="_blank" class="primary-btn" data-text="Sept '18 to Dec '19">
+								<a href="https://www.hp-iq.com/" target="_blank" class="primary-btn" data-text="Jul '22 to Oct '25">
+									<span>C</span><span>o</span><span>m</span><span>p</span><span>a</span><span>n</span><span>y</span>
+									<span>L</span><span>i</span><span>n</span><span>k</span>
+								</a>
+							</div>
+						</div>
+						<div class="bottom-sec wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.6s">
+							<ul style="list-style-type:disc">
+								<li>Designed and deployed a build artifact management solution used across six firmware projects, to automate the hardware in the loop testing of built firmware artifacts.</li>
+								<li>Wrote several Java + Android applications for Factory Automation &mdash; automatic camera calibration, subsystem co-existence testing, IMU sensor bring-up &mdash; later adopted by the CVML, EE, RF, and System Software teams.</li>
+								<li>Led the rebuild of the hardware testing lab. Migrated hardware test machines to Infrastructure as Code (Ansible) and scaled up test fixtures from 5 to 20.</li>
+								<li>Led a cloud service migration to switch vendors with zero downtime and no external changes, resulting in an 80% cost savings. Improved CI runtimes across firmware and Python projects by 60%.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="single-job">
+						<div class="top-sec d-flex justify-content-between">
+							<div class="top-left">
+								<h4>Senior SWE, Framework</h4>
+								<p>Symbio Robotics, Emeryville CA</p>
+							</div>
+							<div class="top-right">
+								<a href="https://www.linkedin.com/company/symbio-robotics" target="_blank" class="primary-btn" data-text="Nov '21 to May '22">
 									<span>C</span><span>o</span><span>m</span><span>p</span><span>a</span><span>n</span><span>y</span>
 									<span>L</span><span>i</span><span>n</span><span>k</span>
 								</a>
 							</div>
 						</div>
 						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-							<p>
-								<ul style="list-style-type:disc">
-									<li>Characterize performance for a suite of surgical instruments for use in robot assisted surgery.</li>
-			 						<li>Define, test, and refine instrument life models using a variety of statistical and empirical methods.</li>
-									<li>Design bench-top experiments, including fixtures and sensor selection for design validation.</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="single-job">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Plasma Engineering Co-op</h4>
-								<p>General Fusion</p>
-							</div>
-								<div class="top-right">
-									<a href="https://generalfusion.com/"  target="_blank" class="primary-btn" data-text="May to Sept '17">
-										<span>C</span><span>o</span><span>m</span><span>p</span><span>a</span><span>n</span><span>y</span>
-										<span>L</span><span>i</span><span>n</span><span>k</span>
-									</a>
-								</div>
-						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
 							<ul style="list-style-type:disc">
-								<li>Designed an ultrafast (<2ms) protective shutter to shield optical sensors from corrosive liquid metal splash.</li>
-								<li>Explored and characterized high voltage symmetry measurement for rapid discharge coils.</li>
-								<li>Built mechanical and electrical isolation of diagnostic equipment, in a volatile and high noise environment.</li>
-								<li>Assisted in the assembly, commissioning, and maintenance of ultra high vacuum vessels.</li>
+								<li>Worked on a robotic platform for automated assembly using robots from vendors like ABB and UR.</li>
+								<li>Worked on logging, data analysis, and applications to understand large volumes of robotic data.</li>
+								<li>Worked on a force control application involving gear meshing using robots, implemented using async zmq clients and servers.</li>
 							</ul>
 						</div>
 					</div>
@@ -214,22 +211,22 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
-								<h4>Systems Engineering Co-op</h4>
-								<p>Avigilon, Vancouver BC</p>
+								<h4>Software Engineer, Tools</h4>
+								<p>Johnson &amp; Johnson, Redwood City CA</p>
 							</div>
 							<div class="top-right">
-								<a href="http://avigilon.com/" target="_blank" class="primary-btn" data-text="May to Dec '16">
+								<a href="https://www.jnjmedtech.com/en-US/products/robotics/ottava-robotic-surgical-system/overview/" target="_blank" class="primary-btn" data-text="Feb '20 to June '21">
 									<span>C</span><span>o</span><span>m</span><span>p</span><span>a</span><span>n</span><span>y</span>
 									<span>L</span><span>i</span><span>n</span><span>k</span>
 								</a>
 							</div>
 						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="bottom-sec wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
 							<ul style="list-style-type:disc">
-								<li>Designed solution for mass detached area storage (petabyte scale), from design to manufacturing delivery.</li>
-								<li>Field sized and qualification tested workstations, servers, and displays.</li>
-								<li>Translated qualitative criteria to object performance metrics with automated and reproducible tests.</li>
-								<li>Rewrote windows installers for all major Avigilon software packages using Python, WiX, and C\#</li>
+								<li>Created libraries to provide high level logging capabilities in Python that plugged into low level C++ applications.</li>
+								<li>Wrote API for the rapid integration of new sensors to expand logging without needing additions to the control chain.</li>
+								<li>Created testing infrastructure to manage test cases and data generated. Worked on a streamlined pipeline for data definition, packing, upload, and processing.</li>
+								<li>Worked with PyTest, Numpy, and Django libraries to build tools for use in automated manufacturing testing.</li>
 							</ul>
 						</div>
 					</div>
@@ -254,9 +251,8 @@
 						</div>
 						<div class="footer-social">
 							<a href="https://github.com/akshivbansal"><i class="fa fa-github"></i></a>
-							<a href="https://twitter.com/akshivb"><i class="fa fa-twitter"></i></a>
 							<a href="https://www.linkedin.com/in/akshiv-bansal/" target="_blank"><i class="fa fa-linkedin"></i></a>
-							<a href="mailto:akshivb@gmail.com"><i class="fa fa-envelope"></i></a>
+							<a href="mailto:hello@akshiv.com"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
 				</div>
