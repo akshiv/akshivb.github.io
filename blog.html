@@ -1,10 +1,40 @@
-<!DOCTYPE html>
-<html lang="zxx" class="no-js">
+---
+layout: default
+title: Blog
+---
+<!-- start banner Area -->
+<section class="banner-area relative">
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content col-lg-12">
+				<h1 class="text-white">
+					Blog
+				</h1>
+				<p class="link-nav">
+					<span class="box">
+						<a href="{{ '/index.html' | relative_url }}">Home </a>
+						<a href="#">Blog</a></p>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
 
-<body>
-	<p>
-		Under Construction
-	</p>
-</body>
-
-</html>
+<!-- Blog List Area -->
+<section class="blog-list-area section-gap">
+	<div class="container">
+		<div class="blog-list">
+			{% for post in site.posts %}
+			<article class="blog-list-item">
+				<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+				<span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+				<p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+			</article>
+			{% else %}
+			<p class="blog-empty">No posts yet — check back soon.</p>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- End Blog List Area -->

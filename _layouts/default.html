@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{{ '/img/fav.png' | relative_url }}">
+	<!-- Author Meta -->
+	<meta name="author" content="akshiv">
+	<!-- Meta Description -->
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}akshiv,Bansal{% endif %}">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="{{ '/css/linearicons.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/bootstrap.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/magnific-popup.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/nice-select.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/animate.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/owl.carousel.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/blog.css' | relative_url }}">
+	{% feed_meta %}
+</head>
+
+<body>
+
+	<!-- Start Header Area -->
+	<header id="header" class="dark">
+		<div class="container main-menu">
+			<div class="row align-items-center d-flex">
+				<div id="logo">
+					<a href="{{ '/index.html' | relative_url }}"><img src="{{ '/img/logo2.png' | relative_url }}" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container" class="ml-auto">
+					<ul class="nav-menu white">
+						<li class=""><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+						<li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+						<li class="menu-has-children"><a href="{{ '/projects.html' | relative_url }}">Projects</a>
+							<ul class="dark">
+								<li><a href="{{ '/sus-details.html' | relative_url }}">AMS Sustainability Projects</a></li>
+								<li><a href="{{ '/robot-details.html' | relative_url }}">Autonomous Retrieval Robot</a></li>
+								<li><a href="{{ '/eit-details.html' | relative_url }}">Electrical Impedance Tomography</a></li>
+								<li><a href="{{ '/gantry-details.html' | relative_url }}">Gantry Robot</a></li>
+								<li><a href="{{ '/phys-details.html' | relative_url }}">Lasers and Optical Cavities</a></li>
+								<li><a href="{{ '/pump-details.html' | relative_url }}">Low Cost Syringe Pump</a></li>
+								<li><a href="{{ '/energy-details.html' | relative_url }}">Powering Our Future</a></li>
+								<li><a href="{{ '/solar-details.html' | relative_url }}">Solar Vehicle Project</a></li>
+								<li><a href="{{ '/shutter-details.html' | relative_url }}">Ultrafast Shutter</a></li>
+							</ul>
+						</li>
+						<li><a class="active" href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+	{{ content }}
+
+	<!-- start footer Area -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer-top flex-column">
+						<div class="footer-logo">
+							<a href="#">
+								<img src="{{ '/img/logo.png' | relative_url }}" alt="">
+							</a>
+							<h4>Contact Me</h4>
+						</div>
+						<div class="footer-social">
+							<a href="https://github.com/akshivbansal" target="_blank"><i class="fa fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/akshiv-bansal/" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="mailto:hello@akshiv.com"><i class="fa fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer-bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#">
+			<i class="lnr lnr-arrow-up"></i>
+		</a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="{{ '/js/vendor/jquery-2.2.4.min.js' | relative_url }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="{{ '/js/vendor/bootstrap.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/easing.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/hoverIntent.js' | relative_url }}"></script>
+	<script src="{{ '/js/superfish.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/mn-accordion.js' | relative_url }}"></script>
+	<script src="{{ '/js/jquery.ajaxchimp.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/jquery.magnific-popup.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/owl.carousel.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/jquery.nice-select.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/isotope.pkgd.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/jquery.circlechart.js' | relative_url }}"></script>
+	<script src="{{ '/js/mail-script.js' | relative_url }}"></script>
+	<script src="{{ '/js/wow.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/main.js' | relative_url }}"></script>
+</body>
+
+</html>

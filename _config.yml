@@ -1,0 +1,28 @@
+title: Akshiv Bansal
+url: "https://akshiv.com"
+baseurl: ""
+
+theme: null
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Only posts get the pretty /blog/:title/ permalink; plain pages (like
+# blog.html) keep Jekyll's normal path-based URL.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:title/
+
+exclude:
+  - drafts
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
